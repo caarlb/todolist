@@ -24,8 +24,8 @@ const Post = ({ post, setCurrentId }) => {
     <Card className={classes.card}>
       <ListItemIcon>
         <Checkbox />
-        <div className={classes.title}>
-          <Typography variant="h6">{post.title}</Typography>
+        <div className={classes.List}>
+          <Typography variant="h5">{post.title}</Typography>
         </div>
         <CardActions className={classes.cardActions}>
           <Button size="small" color="primary" onClick={() => {}}>

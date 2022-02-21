@@ -28,7 +28,7 @@ const Post = ({ post, setCurrentId }) => {
           <Typography variant="h5">{post.title}</Typography>
         </div>
         <CardActions className={classes.cardActions}>
-          <Button size="small" color="primary" onClick={() => {}}>
+          <Button size="small" color="primary" onClick={() => setCurrentId(post._id)}>
             <MoreHorizIcon fontSize="small" /> Edit
           </Button>
           <Button size="small" color="primary" onClick={() => {}}>

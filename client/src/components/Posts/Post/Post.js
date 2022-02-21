@@ -25,7 +25,7 @@ const Post = ({ post, setCurrentId }) => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.card}>
+    <Card className={classes.container}>
       <ListItemIcon>
         <Checkbox />
         <div className={classes.List}>

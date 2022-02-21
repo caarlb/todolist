@@ -29,9 +29,13 @@ const Form = ({ currentId, setCurrentId }) => {
     } else {
       dispatch(createPost(postData));
     }
+    clear();
   };
 
-  const clear = () => {};
+  const clear = () => {
+    setCurrentId(0);
+    setPostData({ title: "" });
+  };
 
   return (
     <Paper className={classes.paper}>
@@ -41,7 +45,9 @@ const Form = ({ currentId, setCurrentId }) => {
         className={`${classes.root} ${classes.form}`}
         onSubmit={handleSubmit}
       >
-        <Typography variant="h6">{currentId ? 'Edit the existing task' : 'Add new task'} </Typography>
+        <Typography variant="h6">
+          {currentId ? "Edit the existing task" : "Add new task"}{" "}
+        </Typography>
         <TextField
           name="title"
           variant="outlined"

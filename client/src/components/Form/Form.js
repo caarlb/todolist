@@ -41,7 +41,7 @@ const Form = ({ currentId, setCurrentId }) => {
         className={`${classes.root} ${classes.form}`}
         onSubmit={handleSubmit}
       >
-        <Typography variant="h6">Add new task</Typography>
+        <Typography variant="h6">{currentId ? 'Edit the existing task' : 'Add new task'} </Typography>
         <TextField
           name="title"
           variant="outlined"
@@ -59,7 +59,7 @@ const Form = ({ currentId, setCurrentId }) => {
           type="submit"
           fullWidth
         >
-          Create
+          submit
         </Button>
         <Button
           variant="contained"

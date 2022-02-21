@@ -46,7 +46,7 @@ const Form = ({ currentId, setCurrentId }) => {
         onSubmit={handleSubmit}
       >
         <Typography variant="h6">
-          {currentId ? "Edit the existing task" : "Add new task"}{" "}
+          {currentId ? "Edit the existing task" : "Add new task"}
         </Typography>
         <TextField
           name="title"

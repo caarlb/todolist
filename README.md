@@ -1,31 +1,31 @@
-# todolist
-SPA to handle your personal tasks 
+# To Do List 
+Single webpage application created for task management based on a to-do list. You can mark the completed tasks, create new ones, and modifie or delete the existing ones.
 
-Run with command:
-npm start
+Project originally create with Express, migration in progress to NestJS.
+## Deployment
 
-DB information required set up on .env file:
-PORT = 5000
-CONNECTION_URL = mongodb+srv://testing:testing123@cluster0.n6gdj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+To deploy this project run
 
-Required packages: {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "mongoose": "^6.2.2",
-    "nodemon": "^2.0.15"
-  }
-}
+```bash
+  npm start
+```
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`PORT = 5000`
+
+`CONNECTION_URL = mongodb+srv://testing:testing123@cluster0.n6gdj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+
+
+## Tech Stack
+
+**Client:** React
+
+**Actual Server:** Node 16.14, Express 4.17.3
+
+**DB:** MongoDB Atlas 4.4.1, Mongoose 6.2.2
+
+**After Migration Server:** Node 16.14, NestJS 8.0.0

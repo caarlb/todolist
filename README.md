@@ -22,7 +22,7 @@ To run this project, you will need to add the following environment variables to
 
 ## Tech Stack
 
-**Client:** React
+**Client:** React 17.0.2
 
 **Actual Server:** Node 16.14, Express 4.17.3
 
